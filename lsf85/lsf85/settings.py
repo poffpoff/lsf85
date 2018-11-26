@@ -25,7 +25,9 @@ SECRET_KEY = 'me!@m-tsl1#)de3$9^3yp8qy%fs$_ya7cr7z6dftd==(c8wlni'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+   'http://dckconsulting1.alwaysdata.net/',
+]
 
 
 # Application definition
@@ -76,8 +78,11 @@ WSGI_APPLICATION = 'lsf85.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dckconsulting1_lsf85',
+        'USER': 'dckconsulting1',
+        'PASSWORD': 'Tompous6!',
+        'HOST': 'postgresql-dckconsulting1.alwaysdata.net',
     }
 }
 
